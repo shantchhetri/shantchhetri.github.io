@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from 'framer-motion';
-import { ChevronDown, ExternalLink, Eye } from 'lucide-react';
+import { ChevronDown, ExternalLink, Eye, Quote } from 'lucide-react';
 import { useState } from 'react';
+import { citations, citationsUpdated, citedBy } from '../data/citations';
 import { SELF_NAME } from '../data/publications';
 import type { Publication } from '../data/types';
 import { asset, cn, doiUrl } from '../lib/utils';
@@ -84,6 +85,11 @@ export function PublicationCard({ pub, index, onPreview }: { pub: Publication; i
             <a href={doiUrl(pub.doi)} target="_blank" rel="noopener noreferrer" className="rounded-md border border-line px-2 py-0.5 font-mono text-xs text-navy transition-colors hover:border-wine hover:text-wine">
               doi:{pub.doi}
             </a>
+          )}
+          {!!citedBy(pub.doi) && (
+            <span className="inline-flex items-center gap-1 rounded-md bg-slate-100 px-2 py-0.5 text-xs font-semibold text-navy dark:bg-slate-800" title={`Citations (${citations.source}, ${citationsUpdated})`}>
+              <Quote size={11} /> Cited by {citedBy(pub.doi)}
+            </span>
           )}
           {(pub.url || pub.doi) && (
             <a href={pub.url ?? doiUrl(pub.doi!)} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-muted hover:text-wine">

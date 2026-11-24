@@ -1,0 +1,35 @@
+{
+  "updated": "2026-11-24",
+  "source": "OpenAlex",
+  "sourceUrl": "https://openalex.org/authors/A5094084314",
+  "citations": 52,
+  "hIndex": 4,
+  "i10Index": 2,
+  "perYear": [
+    {
+      "year": 2024,
+      "citations": 3
+    },
+    {
+      "year": 2025,
+      "citations": 26
+    },
+    {
+      "year": 2026,
+      "citations": 23
+    }
+  ],
+  "byDoi": {
+    "10.1039/d4sc02339k": 27,
+    "10.1039/d4ra01499e": 11,
+    "10.1002/asia.202401429": 4,
+    "10.1021/acs.jpcc.4c01133": 4,
+    "10.1021/acs.jpclett.4c02535": 3,
+    "10.1002/cptc.202500429": 1,
+    "10.1039/d6tc01848c": 1,
+    "10.5517/ccdc.csd.cc2n4ykb": 1,
+    "10.1039/d5tc04219d": 0,
+    "10.1021/acs.jpclett.6c01870": 0,
+    "10.1021/acs.jpcc.6c03722": 0
+  }
+}
