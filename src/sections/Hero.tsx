@@ -39,7 +39,7 @@ export function Hero() {
         <div className="container-page relative grid min-h-[calc(92svh-4rem)] items-center gap-12 py-14 lg:grid-cols-12">
           <div className="lg:col-span-7">
             <motion.p {...fade(0.05)} className="chip mb-6 gap-2 px-3 py-1 text-xs">
-              <span className="h-1.5 w-1.5 rounded-full bg-wine" />
+              <span className="h-1.5 w-1.5 rounded-full bg-peach-400" />
               {profile.department} · {profile.institutionShort}
             </motion.p>
             <motion.h1 {...fade(0.12)} className="text-5xl font-extrabold leading-[1.02] text-navy sm:text-6xl lg:text-7xl">
@@ -48,7 +48,7 @@ export function Hero() {
             <motion.p {...fade(0.2)} className="mt-5 flex flex-wrap gap-x-3 gap-y-1 text-base font-medium text-muted sm:text-lg">
               {profile.designation.split('|').map((part, i) => (
                 <span key={part} className="flex items-center gap-3">
-                  {i > 0 && <span className="h-1 w-1 rounded-full bg-wine" />}
+                  {i > 0 && <span className="h-1 w-1 rounded-full bg-peach-400" />}
                   {part.trim()}
                 </span>
               ))}
@@ -77,7 +77,7 @@ export function Hero() {
             <div className="lg:col-span-5 lg:flex lg:justify-end lg:translate-x-[max(0px,calc((100vw_-_75rem)/2_-_1rem))]">
             <motion.figure {...fade(0.3)} className="mx-auto w-full max-w-[240px] lg:mx-0 lg:max-w-[250px]">
               <div className="relative">
-                <div className="absolute -inset-1 rounded-[1.6rem] bg-gradient-to-br from-teal-300/70 via-teal-500/10 to-sky-400/50 blur-sm" aria-hidden />
+                <div className="absolute -inset-1 rounded-[1.6rem] bg-gradient-to-br from-peach-300/70 via-peach-500/10 to-peach-400/50 blur-sm" aria-hidden />
                 <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-line bg-surface shadow-xl shadow-slate-900/10">
                   <img src={asset(profile.portrait)} alt={`Portrait of ${profile.name}`} width={960} height={1111} className="h-full w-full object-cover object-[32%_30%]" />
                 </div>

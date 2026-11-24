@@ -119,7 +119,7 @@ export function Contact() {
       <div className="grid gap-14 lg:grid-cols-12">
         <Reveal className="card min-w-0 space-y-7 p-6 sm:p-8 lg:col-span-5">
           <div className="flex gap-4">
-            <span className="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-wine/10 text-wine"><Mail size={19} /></span>
+            <span className="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-peach-400/10 text-wine"><Mail size={19} /></span>
             <div>
               <p className="text-[13px] text-muted">Email</p>
               {email ? (
@@ -132,7 +132,7 @@ export function Contact() {
             </div>
           </div>
           <div className="flex gap-4">
-            <span className="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-wine/10 text-wine"><Building2 size={19} /></span>
+            <span className="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-peach-400/10 text-wine"><Building2 size={19} /></span>
             <div>
               <p className="text-[13px] text-muted">Affiliation</p>
               <p className="text-lg font-semibold leading-snug text-navy">{profile.department}</p>
@@ -208,7 +208,7 @@ export function Contact() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0 }}
                     className={`flex items-start gap-2 rounded-lg border px-4 py-3 text-sm ${
-                      status.kind === 'error' ? 'border-rose-300 bg-rose-50 text-rose-700 dark:border-rose-400/40 dark:bg-rose-400/10 dark:text-rose-300' : 'border-emerald-300 bg-emerald-50 text-emerald-700 dark:border-emerald-400/40 dark:bg-emerald-400/10 dark:text-emerald-300'
+                      status.kind === 'error' ? 'border-rose-300 bg-rose-50 text-rose-700 dark:border-rose-400/40 dark:bg-rose-400/10 dark:text-rose-300' : 'border-peach-300 bg-peach-50 text-peach-700 dark:border-peach-400/40 dark:bg-peach-400/10 dark:text-peach-300'
                     }`}
                   >
                     {status.kind === 'error' ? <AlertCircle size={16} className="mt-0.5 shrink-0" /> : <CheckCircle2 size={16} className="mt-0.5 shrink-0" />}

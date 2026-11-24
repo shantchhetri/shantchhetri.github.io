@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Design tokens. Token names are historical: `wine` is the accent colour (teal),
+/* Design tokens. Token names are historical: `wine` is the accent colour (salmon #F0A68B; a deeper shade for text on white),
    `navy` is the heading colour (deep slate). Change the RGB values here to re-theme. */
 @layer base {
   :root {
@@ -12,9 +12,9 @@
     --muted: 100 116 139;   /* slate-500 */
     --line: 226 232 240;    /* slate-200 */
     --navy: 15 23 42;       /* slate-900 headings */
-    --wine: 13 148 136;     /* teal-600 accent */
+    --wine: 176 87 59;      /* peach-700: readable salmon for text on white */
     --hero-from: 15 23 42;
-    --hero-to: 17 60 66;
+    --hero-to: 74 40 30;
     color-scheme: light;
   }
   .dark {
@@ -24,9 +24,9 @@
     --muted: 148 163 184;
     --line: 36 48 66;
     --navy: 241 245 249;
-    --wine: 45 212 191;     /* teal-400 */
+    --wine: 240 166 139;    /* #F0A68B */
     --hero-from: 6 10 18;
-    --hero-to: 10 42 46;
+    --hero-to: 44 24 18;
     color-scheme: dark;
   }
   html { scroll-behavior: smooth; scroll-padding-top: 5rem; -webkit-text-size-adjust: 100%; }
@@ -49,8 +49,8 @@
   .btn {
     @apply inline-flex items-center justify-center gap-2 rounded-lg border px-5 py-2.5 text-sm font-semibold transition-all duration-200;
   }
-  .btn-primary { @apply btn border-transparent bg-wine text-white shadow-sm shadow-wine/30 hover:brightness-110 hover:shadow-md hover:shadow-wine/30; }
-  .dark .btn-primary { @apply text-[#06201d]; }
+  .btn-primary { @apply btn border-transparent bg-peach-400 text-slate-900 shadow-sm shadow-peach-400/40 hover:brightness-105 hover:shadow-md hover:shadow-peach-400/50; }
+  .dark .btn-primary { @apply text-slate-900; }
   .btn-ghost { @apply btn border-line bg-surface text-ink hover:border-wine hover:text-wine; }
   .btn-hero-ghost { @apply btn border-white/40 bg-white/5 text-white backdrop-blur hover:border-white hover:bg-white/10; }
   .card { @apply rounded-xl border border-line bg-surface shadow-sm transition-all duration-300; }

@@ -39,7 +39,7 @@ export function PublicationCard({ pub, index, onPreview }: { pub: Publication; i
       className={cn('card group grid gap-4 border-l-4 border-l-wine/70 p-5 hover:shadow-md sm:grid-cols-[3.5rem_1fr] sm:p-6', onPreview && 'cursor-pointer hover:-translate-y-0.5')}
     >
       <div className="flex items-baseline gap-3 sm:block">
-        <span className="inline-block rounded-md bg-wine/10 px-2 py-1 font-mono text-xs font-semibold text-wine">{pub.year}</span>
+        <span className="inline-block rounded-md bg-peach-400/10 px-2 py-1 font-mono text-xs font-semibold text-wine">{pub.year}</span>
         {index !== undefined && <span className="font-mono text-[11px] text-muted sm:mt-1 sm:block">[{index}]</span>}
       </div>
       <div className="min-w-0">
@@ -77,7 +77,7 @@ export function PublicationCard({ pub, index, onPreview }: { pub: Publication; i
 
         <div className="mt-3 flex flex-wrap items-center gap-x-5 gap-y-2 text-[13px]">
           {onPreview && (
-            <button onClick={onPreview} aria-haspopup="dialog" className="inline-flex items-center gap-1.5 rounded-md bg-wine/10 px-2.5 py-0.5 text-xs font-semibold text-wine transition-colors hover:bg-wine hover:text-white">
+            <button onClick={onPreview} aria-haspopup="dialog" className="inline-flex items-center gap-1.5 rounded-md bg-peach-400/10 px-2.5 py-0.5 text-xs font-semibold text-wine transition-colors hover:bg-peach-400 hover:text-slate-900">
               <Eye size={13} /> Preview
             </button>
           )}

@@ -62,7 +62,7 @@ export function Impact() {
                     whileInView={{ height: `${(y.citations / maxYear) * 100}%` }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
-                    className="w-full max-w-[3.5rem] rounded-t-md bg-wine/80"
+                    className="w-full max-w-[3.5rem] rounded-t-md bg-peach-400/80"
                   />
                   <span className="font-mono text-xs text-muted">{y.year}</span>
                 </div>
@@ -87,7 +87,7 @@ export function Impact() {
               {p.url ? (
                 <a href={p.url} target="_blank" rel="noopener noreferrer me" className="card card-hover group flex h-full flex-col gap-4 p-5">
                   <span className="flex items-start justify-between">
-                    <span className="grid h-11 w-11 place-items-center rounded-lg bg-wine/10 text-wine transition-colors group-hover:bg-wine group-hover:text-white">
+                    <span className="grid h-11 w-11 place-items-center rounded-lg bg-peach-400/10 text-wine transition-colors group-hover:bg-peach-400 group-hover:text-slate-900">
                       <Icon size={20} />
                     </span>
                     <ArrowUpRight size={16} className="text-muted group-hover:text-wine" />

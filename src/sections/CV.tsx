@@ -21,7 +21,7 @@ export function CV() {
         <Reveal className="lg:col-span-5">
           {/* stylized document preview */}
           <a href={href} target="_blank" rel="noopener noreferrer" className="group relative block" aria-label="Open the CV PDF in a new tab">
-            <div className="absolute inset-0 translate-x-3 translate-y-3 rounded-xl bg-wine/15" aria-hidden />
+            <div className="absolute inset-0 translate-x-3 translate-y-3 rounded-xl bg-peach-400/15" aria-hidden />
             <div className="relative aspect-[1/1.414] rounded-xl border border-line bg-white p-7 shadow-lg transition-transform duration-300 group-hover:-translate-y-1 sm:p-9">
               <p className="text-center text-2xl font-bold text-slate-900">
                 {profile.name}, {profile.postNominal}
@@ -30,7 +30,7 @@ export function CV() {
               <div className="mt-6 space-y-5">
                 {cv.sections.slice(0, 6).map((s, i) => (
                   <div key={s}>
-                    <p className="border-b border-teal-600/40 pb-1 text-[11px] font-semibold text-slate-800">{s}</p>
+                    <p className="border-b border-peach-600/40 pb-1 text-[11px] font-semibold text-slate-800">{s}</p>
                     <div className="mt-2 space-y-1.5" aria-hidden>
                       {Array.from({ length: i % 2 ? 2 : 3 }).map((_, k) => (
                         <div key={k} className="h-[5px] rounded bg-slate-200" style={{ width: `${92 - k * 17}%` }} />

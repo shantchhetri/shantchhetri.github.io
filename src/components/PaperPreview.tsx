@@ -53,12 +53,12 @@ function TitlePage({ pub }: { pub: Publication }) {
   return (
     <div className="px-6 pb-7 pt-6 sm:px-10 sm:pb-9 sm:pt-8">
       {/* journal header */}
-      <motion.div variants={block} className="flex flex-wrap items-end justify-between gap-2 border-b-2 border-teal-700 pb-3">
+      <motion.div variants={block} className="flex flex-wrap items-end justify-between gap-2 border-b-2 border-peach-700 pb-3">
         <div>
           <p className="font-paper text-lg italic text-slate-800 sm:text-xl">{pub.journal}</p>
           <p className="mt-0.5 font-mono text-[11px] text-slate-500">{meta}</p>
         </div>
-        <span className="rounded-sm bg-teal-700 px-2 py-0.5 text-[10px] font-bold uppercase tracking-[0.16em] text-white">
+        <span className="rounded-sm bg-peach-700 px-2 py-0.5 text-[10px] font-bold uppercase tracking-[0.16em] text-white">
           {published ? 'Research Article' : 'Manuscript'}
         </span>
       </motion.div>
@@ -81,7 +81,7 @@ function TitlePage({ pub }: { pub: Publication }) {
                 initial={{ backgroundSize: '0% 100%' }}
                 animate={{ backgroundSize: '100% 100%' }}
                 transition={{ delay: 0.9 + i * 0.07, duration: 0.6, ease: 'easeOut' }}
-                className="rounded bg-gradient-to-r from-teal-200 to-teal-100 bg-no-repeat px-1 font-bold text-slate-900 [&+span]:-ml-1"
+                className="rounded bg-gradient-to-r from-peach-200 to-peach-100 bg-no-repeat px-1 font-bold text-slate-900 [&+span]:-ml-1"
               >
                 {a}
               </motion.strong>
@@ -96,7 +96,7 @@ function TitlePage({ pub }: { pub: Publication }) {
       {/* abstract teaser */}
       {pub.abstract && (
         <motion.div variants={block} className="relative mt-6 max-h-24 overflow-hidden border-t border-slate-200 pt-4">
-          <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-teal-700">Abstract</p>
+          <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-peach-700">Abstract</p>
           <p className="mt-1 text-[13.5px] leading-relaxed text-slate-600">{pub.abstract}</p>
           <div className="pointer-events-none absolute inset-x-0 bottom-0 h-12 bg-gradient-to-t from-white to-transparent" />
         </motion.div>

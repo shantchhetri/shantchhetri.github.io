@@ -10,15 +10,15 @@ export function CtaBanner() {
   return (
     <div className="bg-surface pb-16 pt-4">
       <Reveal className="container-page">
-        <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-teal-600 via-teal-700 to-slate-900 px-6 py-14 text-center text-white shadow-xl shadow-teal-900/20 sm:px-12">
-          <div className="pointer-events-none absolute -left-20 -top-20 h-64 w-64 rounded-full bg-teal-300/30 blur-3xl" aria-hidden />
+        <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-peach-600 via-peach-700 to-slate-900 px-6 py-14 text-center text-white shadow-xl shadow-peach-900/20 sm:px-12">
+          <div className="pointer-events-none absolute -left-20 -top-20 h-64 w-64 rounded-full bg-peach-300/30 blur-3xl" aria-hidden />
           <div className="pointer-events-none absolute -bottom-24 right-0 h-72 w-72 rounded-full bg-sky-400/20 blur-3xl" aria-hidden />
           <h2 className="relative text-3xl sm:text-4xl">Interested in collaborating?</h2>
-          <p className="relative mx-auto mt-4 max-w-2xl text-teal-50/90">
+          <p className="relative mx-auto mt-4 max-w-2xl text-peach-50/90">
             I am open to research collaborations, postdoctoral opportunities and invited talks on n-type organic semiconductors and charge transport.
           </p>
           <div className="relative mt-8 flex flex-wrap justify-center gap-3">
-            <a href={pageHref('contact')} className="btn bg-white px-6 py-3 text-teal-800 hover:bg-teal-50">
+            <a href={pageHref('contact')} className="btn bg-white px-6 py-3 text-peach-800 hover:bg-peach-50">
               <Mail size={16} /> Get in touch
             </a>
             <a href={pageHref('publications')} className="btn-hero-ghost px-6 py-3">

@@ -115,7 +115,7 @@ export function Navbar({ page }: { page: Page }) {
                   className={cn('flex items-center justify-between py-3 text-base font-semibold', page === item.id ? 'text-wine' : 'text-ink')}
                 >
                   {item.label}
-                  {page === item.id && <span className="h-1.5 w-1.5 rounded-full bg-wine" />}
+                  {page === item.id && <span className="h-1.5 w-1.5 rounded-full bg-peach-400" />}
                 </a>
               </li>
             ))}

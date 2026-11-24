@@ -46,7 +46,7 @@ export function Journey() {
               <button
                 onClick={() => setG(null)}
                 aria-pressed={g === null}
-                className={cn('w-full rounded-lg px-3 py-2 text-left text-[13px] font-medium transition-colors lg:text-[15px]', g === null ? 'bg-wine text-white' : 'text-muted hover:bg-paper hover:text-navy')}
+                className={cn('w-full rounded-lg px-3 py-2 text-left text-[13px] font-medium transition-colors lg:text-[15px]', g === null ? 'bg-peach-400 text-slate-900' : 'text-muted hover:bg-paper hover:text-navy')}
               >
                 All entries <span className="ml-1 font-mono text-[11px]">{journey.length}</span>
               </button>
@@ -59,7 +59,7 @@ export function Journey() {
                   <button
                     onClick={() => setG(i)}
                     aria-pressed={g === i}
-                    className={cn('flex w-full items-center gap-3 rounded-lg px-3 py-2 text-left text-[13px] font-medium transition-colors lg:text-[15px]', g === i ? 'bg-wine text-white' : 'text-muted hover:bg-paper hover:text-navy')}
+                    className={cn('flex w-full items-center gap-3 rounded-lg px-3 py-2 text-left text-[13px] font-medium transition-colors lg:text-[15px]', g === i ? 'bg-peach-400 text-slate-900' : 'text-muted hover:bg-paper hover:text-navy')}
                   >
                     <Icon size={16} strokeWidth={1.5} className="hidden lg:block" />
                     {grp.label} <span className="ml-auto font-mono text-[11px]">{n}</span>
@@ -87,7 +87,7 @@ export function Journey() {
                   className="relative grid gap-2 py-5 sm:grid-cols-[7.5rem_1fr] sm:gap-0"
                 >
                   <p className="font-mono text-xs text-wine sm:pr-6 sm:pt-1 sm:text-right">{j.period}</p>
-                  <span className="absolute left-[7.5rem] top-5 hidden -translate-x-1/2 rounded-full bg-wine/10 p-1.5 text-wine sm:block" aria-hidden>
+                  <span className="absolute left-[7.5rem] top-5 hidden -translate-x-1/2 rounded-full bg-peach-400/10 p-1.5 text-wine sm:block" aria-hidden>
                     <Icon size={14} strokeWidth={1.6} />
                   </span>
                   <div className={cn('sm:pl-8', j.placeholder && 'opacity-60')}>

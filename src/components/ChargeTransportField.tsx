@@ -20,8 +20,8 @@ type Carrier = { at: number; to: number; t: number; dwell: number; prev: number;
 
 /** Colours for the white page (light) and for dark mode. Each value is an "r,g,b" string. */
 const PALETTE = {
-  light: { bond: '13,148,136', bondA: 0.6, shadow: '45,212,191', blur: 3, atomMid: '20,184,166', atomEdge: '15,118,110', net: '13,148,136', netA: 0.1, glow: '45,212,191', glowA: 0.35, trail: '8,145,178', halo: '6,182,212', core: '8,145,178', gold: '217,119,6', goldA: 0.28 },
-  dark: { bond: '153,246,228', bondA: 0.55, shadow: '45,212,191', blur: 8, atomMid: '94,234,212', atomEdge: '20,184,166', net: '94,234,212', netA: 0.06, glow: '94,234,212', glowA: 0.45, trail: '165,243,252', halo: '34,211,238', core: '255,255,255', gold: '250,204,21', goldA: 0.22 },
+  light: { bond: '208,111,80', bondA: 0.55, shadow: '240,166,139', blur: 3, atomMid: '240,166,139', atomEdge: '176,87,59', net: '208,111,80', netA: 0.1, glow: '240,166,139', glowA: 0.4, trail: '229,138,107', halo: '240,166,139', core: '176,87,59', gold: '217,119,6', goldA: 0.28 },
+  dark: { bond: '250,211,196', bondA: 0.55, shadow: '240,166,139', blur: 8, atomMid: '246,188,166', atomEdge: '229,138,107', net: '246,188,166', netA: 0.06, glow: '246,188,166', glowA: 0.45, trail: '253,232,224', halo: '240,166,139', core: '255,255,255', gold: '250,204,21', goldA: 0.22 },
 };
 type Pal = (typeof PALETTE)['light'];
 

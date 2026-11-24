@@ -52,7 +52,7 @@ function DomainCard({ d, i, compact, className }: { d: Domain; i: number; compac
       whileHover={reduce ? undefined : { y: -6 }}
       onMouseMove={spotlight}
       className={cn(
-        'card group relative overflow-hidden rounded-2xl transition-[border-color,box-shadow] duration-300 hover:border-wine/40 hover:shadow-xl hover:shadow-teal-900/10',
+        'card group relative overflow-hidden rounded-2xl transition-[border-color,box-shadow] duration-300 hover:border-wine/40 hover:shadow-xl hover:shadow-peach-900/10',
         compact ? 'p-6' : 'p-7',
         className,
       )}
@@ -64,12 +64,12 @@ function DomainCard({ d, i, compact, className }: { d: Domain; i: number; compac
         style={{ background: 'radial-gradient(420px circle at var(--mx, 50%) var(--my, 0%), rgb(var(--wine) / 0.09), transparent 60%)' }}
       />
       {/* animated top accent */}
-      <motion.span variants={line} aria-hidden className="absolute inset-x-0 top-0 h-[3px] origin-left bg-gradient-to-r from-teal-300 via-teal-500 to-sky-400" />
+      <motion.span variants={line} aria-hidden className="absolute inset-x-0 top-0 h-[3px] origin-left bg-gradient-to-r from-peach-300 via-peach-500 to-peach-400" />
 
       <div className="relative flex items-start gap-4">
         <motion.span
           variants={icon}
-          className="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-teal-400 to-teal-700 text-white shadow-lg shadow-teal-900/20 transition-transform duration-300 group-hover:rotate-6 group-hover:scale-110"
+          className="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-peach-400 to-peach-700 text-white shadow-lg shadow-peach-900/20 transition-transform duration-300 group-hover:rotate-6 group-hover:scale-110"
         >
           <Icon size={22} strokeWidth={1.8} />
         </motion.span>
@@ -85,7 +85,7 @@ function DomainCard({ d, i, compact, className }: { d: Domain; i: number; compac
           <motion.li
             key={s}
             variants={pill}
-            className="inline-flex items-center gap-1.5 rounded-full border border-wine/25 bg-wine/[0.07] px-3 py-1 text-[12.5px] font-medium text-teal-800 transition-colors duration-200 hover:border-wine hover:bg-wine hover:text-white dark:text-teal-200"
+            className="inline-flex items-center gap-1.5 rounded-full border border-wine/25 bg-peach-400/[0.07] px-3 py-1 text-[12.5px] font-medium text-peach-800 transition-colors duration-200 hover:border-wine hover:bg-peach-400 hover:text-slate-900 dark:text-peach-200"
           >
             <span className="h-1.5 w-1.5 rounded-full bg-current opacity-70" aria-hidden />
             {s}
@@ -102,7 +102,7 @@ export function Expertise() {
 
   return (
     <section id="research" aria-labelledby="research-title" className="relative overflow-hidden bg-surface py-16 sm:py-20">
-      <div className="pointer-events-none absolute -left-32 top-24 h-96 w-96 rounded-full bg-teal-400/10 blur-[120px]" aria-hidden />
+      <div className="pointer-events-none absolute -left-32 top-24 h-96 w-96 rounded-full bg-peach-400/10 blur-[120px]" aria-hidden />
       <div className="pointer-events-none absolute -right-32 bottom-10 h-[28rem] w-[28rem] rounded-full bg-sky-400/10 blur-[130px]" aria-hidden />
       <div
         className="pointer-events-none absolute inset-0 opacity-[0.35] [background-image:radial-gradient(rgb(var(--line))_1px,transparent_1px)] [background-size:26px_26px] [mask-image:linear-gradient(to_bottom,black,transparent_70%)]"
@@ -124,7 +124,7 @@ export function Expertise() {
         </Reveal>
 
         <h3 className="mb-6 flex items-center gap-3 text-xl text-navy">
-          <span className="h-px w-8 bg-wine" aria-hidden /> Research experience
+          <span className="h-px w-8 bg-peach-400" aria-hidden /> Research experience
         </h3>
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {researchDomains.map((d, i) => (
@@ -133,7 +133,7 @@ export function Expertise() {
         </div>
 
         <h3 className="mb-6 mt-20 flex items-center gap-3 text-xl text-navy">
-          <span className="h-px w-8 bg-wine" aria-hidden /> Technical expertise
+          <span className="h-px w-8 bg-peach-400" aria-hidden /> Technical expertise
         </h3>
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-6">
           {expertiseDomains.map((d, i) => (

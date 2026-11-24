@@ -12,7 +12,7 @@ const timeline = journey
 function Block({ label, children }: { label: string; children: React.ReactNode }) {
   return (
     <Reveal className="card mb-4 grid gap-3 p-6 md:grid-cols-12 md:p-7">
-      <h3 className="text-base text-navy md:col-span-4"><span className="mr-2 inline-block h-2 w-2 rounded-full bg-wine align-middle" />{label}</h3>
+      <h3 className="text-base text-navy md:col-span-4"><span className="mr-2 inline-block h-2 w-2 rounded-full bg-peach-400 align-middle" />{label}</h3>
       <div className="text-[15.5px] leading-relaxed text-ink/90 md:col-span-8">{children}</div>
     </Reveal>
   );
@@ -29,7 +29,7 @@ function Timeline() {
       <span className="absolute left-0 top-1 h-[calc(100%-0.5rem)] w-px bg-line" aria-hidden />
       <motion.span
         style={{ scaleY: reduce ? 1 : scaleY }}
-        className="absolute left-0 top-1 h-[calc(100%-0.5rem)] w-px origin-top bg-wine"
+        className="absolute left-0 top-1 h-[calc(100%-0.5rem)] w-px origin-top bg-peach-400"
         aria-hidden
       />
       {timeline.map((t, i) => (

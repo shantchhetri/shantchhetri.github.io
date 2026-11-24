@@ -19,7 +19,7 @@ export function categoryStyle(c: NewsCategory) {
     case 'Conference':
       return 'bg-violet-100 text-violet-700 dark:bg-violet-400/15 dark:text-violet-300';
     case 'Research Achievement':
-      return 'bg-emerald-100 text-emerald-700 dark:bg-emerald-400/15 dark:text-emerald-300';
+      return 'bg-peach-100 text-peach-700 dark:bg-peach-400/15 dark:text-peach-300';
     case 'Collaboration':
       return 'bg-rose-100 text-rose-700 dark:bg-rose-400/15 dark:text-rose-300';
     default:
@@ -61,7 +61,7 @@ export function News() {
               aria-pressed={cat === c}
               className={cn(
                 'rounded-full border px-4 py-1.5 text-[13px] font-medium transition-colors',
-                cat === c ? 'border-wine bg-wine text-white' : 'border-line bg-surface text-muted hover:border-wine hover:text-wine',
+                cat === c ? 'border-wine bg-peach-400 text-slate-900' : 'border-line bg-surface text-muted hover:border-wine hover:text-wine',
               )}
             >
               {c} <span className="ml-1 opacity-70">{n}</span>

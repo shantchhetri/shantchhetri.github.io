@@ -6,7 +6,7 @@
 <link rel="preconnect" href="https://api.crossref.org" crossorigin>
 <title>ASAP Articles — Shant Chhetri</title>
 <style>
-:root{--bg:#ffffff;--card:#fff;--ink:#17232d;--body:#3a4752;--mute:#667582;--line:#dce5e8;--acc:#087f8c;--acc-dark:#06616b;--acc-soft:#e4f4f4;--chip:#eef1f3;--shadow:0 10px 30px rgba(27,61,72,.07);color-scheme:light}
+:root{--bg:#ffffff;--card:#fff;--ink:#17232d;--body:#3a4752;--mute:#667582;--line:#dce5e8;--acc:#b0573b;--acc-dark:#8c4530;--acc-soft:#fde8e0;--chip:#eef1f3;--shadow:0 10px 30px rgba(27,61,72,.07);color-scheme:light}
 *{box-sizing:border-box}
 html{height:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;padding:env(safe-area-inset-top,0) 0 env(safe-area-inset-bottom,0)}
@@ -569,7 +569,7 @@ async function refresh(force){
 
 // ================= Saved / read / presentation helpers =================
 const SHORT = {"1521-4095":"Adv. Mater.","1476-4660":"Nat. Mater.","2520-114X":"Nat. Electron.","1748-3395":"Nat. Nanotechnol.","1749-4893":"Nat. Photonics","2375-2548":"Sci. Adv.","1616-3028":"Adv. Funct. Mater.","1936-086X":"ACS Nano","1530-6992":"Nano Lett.","1613-6829":"Small","2198-3844":"Adv. Sci.","2199-160X":"Adv. Electron. Mater.","2195-1071":"Adv. Opt. Mater.","1520-5002":"Chem. Mater.","2050-7534":"J. Mater. Chem. C","1944-8252":"ACS AMI","2637-6113":"ACS AEM","2051-6355":"Mater. Horiz.","2040-3372":"Nanoscale","2330-4022":"ACS Photonics","1520-5126":"JACS","1521-3773":"Angew. Chem.","2041-6539":"Chem. Sci.","1948-7193":"JPCL","1932-7455":"JPCC","1463-9084":"PCCP","2639-4979":"ACS Mater. Lett.","1755-4349":"Nat. Chem.","2041-1723":"Nat. Commun.","2520-1158":"Nat. Catal.","1091-6490":"PNAS","2643-6728":"Acc. Mater. Res.","2590-2385":"Matter","2451-9294":"Chem"};
-const PUB_COLORS = {"10.1021":"#274b8f","10.1002":"#6b3f9a","10.1038":"#b3261e","10.1039":"#0b6b8a","10.1126":"#9b2335","10.1073":"#1c5d8f"};
+const PUB_COLORS = {"10.1021":"#274b8f","10.1002":"#6b3f9a","10.1038":"#b3261e","10.1039":"#b0573b","10.1126":"#9b2335","10.1073":"#1c5d8f"};
 const pubColor = doi => PUB_COLORS[(doi || "").split("/")[0]] || "";
 const isAcs = doi => /^10\.1021\//i.test(doi || "");
 

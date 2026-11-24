@@ -44,7 +44,7 @@ export function Gallery() {
       {photos.length === 0 ? (
         <Reveal className="mx-auto max-w-xl">
           <div className="card flex flex-col items-center gap-4 px-8 py-14 text-center">
-            <span className="grid h-14 w-14 place-items-center rounded-2xl bg-wine/10 text-wine">
+            <span className="grid h-14 w-14 place-items-center rounded-2xl bg-peach-400/10 text-wine">
               <Camera size={26} />
             </span>
             <p className="text-lg font-semibold text-navy">Photographs coming soon</p>
@@ -61,7 +61,7 @@ export function Gallery() {
                   aria-pressed={cat === c}
                   className={cn(
                     'rounded-full border px-4 py-1.5 text-[13px] font-medium transition-colors',
-                    cat === c ? 'border-wine bg-wine text-white' : 'border-line bg-surface text-muted hover:border-wine hover:text-wine',
+                    cat === c ? 'border-wine bg-peach-400 text-slate-900' : 'border-line bg-surface text-muted hover:border-wine hover:text-wine',
                   )}
                 >
                   {c}
