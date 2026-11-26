@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-25",
+  "updated": "2026-11-26",
   "source": "OpenAlex",
   "sourceUrl": "https://openalex.org/authors/A5094084314",
-  "citations": 52,
+  "citations": 53,
   "hIndex": 4,
   "i10Index": 2,
   "perYear": [
@@ -16,7 +16,7 @@
     },
     {
       "year": 2026,
-      "citations": 23
+      "citations": 24
     }
   ],
   "byDoi": {
