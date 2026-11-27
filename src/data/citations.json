@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26",
+  "updated": "2026-11-27",
   "source": "OpenAlex",
   "sourceUrl": "https://openalex.org/authors/A5094084314",
   "citations": 53,
@@ -24,8 +24,8 @@
     "10.1039/d4ra01499e": 11,
     "10.1002/asia.202401429": 4,
     "10.1021/acs.jpcc.4c01133": 4,
-    "10.1039/d6tc01848c": 2,
     "10.1021/acs.jpclett.4c02535": 3,
+    "10.1039/d6tc01848c": 2,
     "10.1002/cptc.202500429": 1,
     "10.5517/ccdc.csd.cc2n4ykb": 1,
     "10.1039/d5tc04219d": 0,
